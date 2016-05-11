@@ -1,0 +1,16 @@
+.longone{
+    height:600px;
+    background-image:url(images/icon.jpeg);
+    background-position: -110px -20px;
+}
+.longtwo{
+    height:600px;
+    background-image:url(images/icon.jpeg);
+    background-size:600px;
+    background-position: -100px;
+}
+.longthree{
+    height:600px;
+    background-image:url(images/icon.jpeg);
+    background-position: -110px -20px;
+}

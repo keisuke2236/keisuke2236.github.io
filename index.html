@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Sample</title>
+    <!--個人用CSSの読み込み-->
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/button.css" />
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
@@ -12,7 +16,32 @@
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+      <body>
+        <!------------------- 最上段のメニューバー  ------------------>
+        <nav>
+          <img class="icon" src="images/icon.jpeg" align="left"/>
+        <ul>
+          <li><a href="index.html" ><a class="btn btn-custom style1"><span class="r r1"></span><span class="r r2"></span>HOME<span class="r r3"></span><span class="r r4"></span></a></a></li>
+          <li><a href="about.html" ><a class="btn btn-custom style1"><span class="r r1"></span><span class="r r2"></span>Works<span class="r r3"></span><span class="r r4"></span></a></a></li>
+          <li><a href="contact.html"><a class="btn btn-custom style1"><span class="r r1"></span><span class="r r2"></span>Contact<span class="r r3"></span><span class="r r4"></span></a></a></li>
+        </ul>
+      </nav>
+      <!------------------- 最初の横に並ぶ3要素  ------------------>
+      <div class="container-fluid">
+        <div class="row">
+            <!-- col-{prefix}-{columns} の形式で合計値12を振り分ける-->
+            <!--prefixが今回はタブレットなため，タブレット以下の画面サイズになった時にレスポンシブする-->
+            <div class="col-sm-4 longone" style="background-image:url(images/original.gif);">
+              
+            </div>
+            <div class="col-sm-4 longtwo" style="background-image:url(images/horo.gif);">
+              
+            </div>
+            <div class="col-sm-4 longthree" style="background-image:url(images/original.gif);">
+              
+            </div>
+        </div>
+    </div>
+    <footer style="background-color:gray">Footer</footer>
+    </body>
 </html>

@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+nav {
+    background-color:#ea930a;
+    text-align:center;
+    height:65px;
+}
+img.icon{
+    /*位置調整*/
+    margin-top:10px;
+    margin-left:10px;
+    /*回り込み解除*/
+    clear:all;
+    /*画像の横幅を指定するとサイズ決まる*/
+    max-width: 50px;
+    /*円の太さと色*/
+    border: 2px solid #7A930A;
+    /*丸くするやつ*/
+    border-radius:100%;
+}
+li {
+    margin-top:15px;
+    letter-spacing: 0.5em;
+}
+
