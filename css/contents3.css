@@ -1,0 +1,141 @@
+body {
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+.static > ul > li{
+    font-size:20px;
+    list-style: none;
+}
+
+/*-----------------
+    1番目の要素
+-----------------*/
+.longone{
+    /*------------共有設定--------------*/
+    /*padding属性は上のやつに設定されていたのだからlongoneに設定しないとダメ*/
+    padding-left:  0px;
+    padding-right: 0px;
+    height:600px;
+    
+    /*-------------固有設定-------------*/
+    /*CSSから見たときのディレクトリパス*/
+    background-image:url(../images/gun.jpg);
+    background-size: 100% auto;
+    
+}
+.longone > .static{
+    text-align:center;
+    display: inline-block;
+    width:100%;
+    height: 300px;
+    /*固有設定*/
+    background-color:rgba(255,255,255,0.7);
+}
+.longone > .move{
+    width:100%;
+    height:300px;
+    text-align:center;
+    /*アニメーションのためのCSS*/
+    visibility: hidden;
+    background-image: url(../images/rorensu.gif);
+    background-size: 100% 100%; 
+}
+.longone:hover > .move{
+    visibility: visible;
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+/*-----------------
+    2番目の要素
+-----------------*/
+.longtwo{
+    /*------------共有設定--------------*/
+    /*padding属性は上のやつに設定されていたのだからlongoneに設定しないとダメ*/
+    padding-left:  0px;
+    padding-right: 0px;
+    height:600px;
+    
+    /*-------------固有設定-------------*/
+    background-position: -10px;
+    background-image:url(../images/horo.gif);
+    background-size: auto 100%;
+    background-size: 600px;
+}
+.longtwo > .static{
+    text-align:center;
+    display: inline-block;
+    top:50%;
+    width:100%;
+    /*固有設定*/
+    height:300px;
+    background-color:rgba(255,255,255,0.7);
+}
+.longtwo > .static > hr{
+     border-color:black;
+}
+.longtwo > .move{
+    width:100%;
+    height:300px;
+    text-align:center;
+    visibility: hidden;
+    background-image: url(../images/nagato.gif);
+    background-size: 100% 100%;
+}
+.longtwo:hover > .move{
+    visibility: visible;
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+
+/*-----------------
+    3番目の要素
+-----------------*/
+.longthree{
+    /*------------共有設定--------------*/
+    /*padding属性は上のやつに設定されていたのだからlongoneに設定しないとダメ*/
+    padding-left:  0px;
+    padding-right: 0px;
+    height:600px;
+
+    /*-------------固有設定-------------*/
+    
+    background-image: url(../images/stb.jpg);
+    background-size: auto 100%;
+    background-position:-250px;
+}
+
+.longthree > .static{
+    text-align:center;
+    display: inline-block;
+    width:100%;
+    background-color:red;
+    /*固有設定*/
+    height:300px;
+    background-color:rgba(255,255,255,0.7);
+}
+.longthree > .move{
+    width:100%;
+    height:300px;
+    text-align:center;
+    visibility: hidden;
+    background-image:url(../images/megumin.gif);
+    background-size: 100% 100%;
+
+}
+.longthree:hover > .move{
+    visibility: visible;
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}

@@ -1,0 +1,11 @@
+footer{
+    background-color:#ea930a;
+    display: inline-block;
+    height:90px;
+    width:100%;
+    text-align: center;
+    
+}
+footer > a{
+    margin-top:10px;
+}

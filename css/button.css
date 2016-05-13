@@ -12,7 +12,7 @@
   margin-right: 30px;
 }
 .btn-custom {
-  border: 1px solid #white;
+  border: 1px solid white;
   border-radius: 0;
   padding: 20px 40px;
   font-size: 20px;
@@ -74,6 +74,9 @@
   bottom: 0;
   right: 0;
 }
+
+
+
 .btn-custom.style2:hover {
   background: #3598db;
   color:white;

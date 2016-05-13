@@ -1,0 +1,23 @@
+.black{
+    height:600px;
+    background-color: black;
+    width :100%;
+    color:white;
+    text-align: center;
+    background-size: cover;
+}
+.black > div{
+    font-size: 30px;
+}
+.black1{
+    background-image:url(../images/otane.png);
+}
+.black2{
+    background-image:url(../images/svg.jpg);
+}
+.black3{
+    background-image:url(../images/otane3.jpg);
+}
+.nomal{
+    font-size: 30px;
+}

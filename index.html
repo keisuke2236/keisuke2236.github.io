@@ -5,43 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Sample</title>
-    <!--個人用CSSの読み込み-->
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/body.css" />
-    <link rel="stylesheet" href="css/button.css" />
+
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/hover.js"></script>
+    <!--個人用CSSを最優先するように読み込み-->
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/contents3.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/black.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
   </head>
-      <body>
+      <body id="mosttop">
         <!------------------- 最上段のメニューバー  ------------------>
-        <nav>
+        <nav id="nav">
           <img class="icon" src="images/icon.jpeg" align="left"/>
         <ul>
-          <li><a href="index.html" ><a class="btn btn-custom style1"><span class="r r1"></span><span class="r r2"></span>HOME<span class="r r3"></span><span class="r r4"></span></a></a></li>
-          <li><a href="about.html" ><a class="btn btn-custom style1"><span class="r r1"></span><span class="r r2"></span>Works<span class="r r3"></span><span class="r r4"></span></a></a></li>
-          <li><a href="contact.html"><a class="btn btn-custom style1"><span class="r r1"></span><span class="r r2"></span>Contact<span class="r r3"></span><span class="r r4"></span></a></a></li>
+          <li><a href="#black1" class="btn btn-custom style1"><span class="r r1"></span><span class="r r2"></span>Info<span class="r r3"></span><span class="r r4"></span></a></li>
+          <li><a href="#black2" class="btn btn-custom style1"><span class="r r1"></span><span class="r r2"></span>サバゲ<span class="r r3"></span><span class="r r4"></span></a></li>
+          <li><a href="#black3" class="btn btn-custom style1"><span class="r r1"></span><span class="r r2"></span>アニクラ<span class="r r3"></span><span class="r r4"></span></a></li>
         </ul>
       </nav>
+      <!------------------- タイトル画像  ------------------>
+      <img src="images/title.jpg" id="titleImg">
       <!------------------- 最初の横に並ぶ3要素  ------------------>
-      <div class="container-fluid">
+      <div class="container-fluid" >
         <div class="row">
             <!-- col-{prefix}-{columns} の形式で合計値12を振り分ける-->
             <!--prefixが今回はタブレットなため，タブレット以下の画面サイズになった時にレスポンシブする-->
-            <div class="col-sm-4 longone" style="background-image:url(images/original.gif);">
-              
+            <!-----1つめ---->
+            <div class="col-sm-4 longone">
+              <div class="move">
+              </div>
+              <div class="static">
+                <span class="termTitle">Information</span>
+                <hr style="border-color:black;">
+                <ul>
+                  <li>プログラマ</li>
+                  <li>サバゲ</li>
+                  <li>パズドラ</li>
+                  <li>アニクラ</li>
+                  <li>BBQ</li>
+                </ul>
+                </div>
             </div>
-            <div class="col-sm-4 longtwo" style="background-image:url(images/horo.gif);">
-              
+            <!-----2つめ---->
+            <div class="col-sm-4 longtwo">
+              <div class="static">
+                <span class="termTitle">作品集</span>
+                <hr>
+                <ul>
+                  <li><a href="http://qiita.com/rorensu2236/items/135f67f9f08df08658fb">LINEログ解析</a></li>
+                  <li><a href="https://github.com/keisuke2236/animalKarte_readProgram">カルテ読込Script</a></li>
+                  <li><a href="https://github.com/keisuke2236/EmotionAnalyzer">感情解析機</a></li>
+                  <li><a href="https://github.com/keisuke2236/temp">言語作ってみた</a></li>
+                </ul>
+              </div>
+              <div class="move"></div>
             </div>
-            <div class="col-sm-4 longthree" style="background-image:url(images/original.gif);">
-              
+            <!-----3つめ---->
+            <div class="col-sm-4 longthree">
+                <div class="move"></div>
+                <div class="static">
+                <span class="termTitle">SNS</span>
+                <hr style="border-color:black;">
+                <ul>
+                  <li><a href="http://qiita.com/rorensu2236">Qiita</a></li>
+                  <li><a href="https://github.com/keisuke2236?tab=repositories">git hub</a></li>
+                  <li><a href="https://twitter.com/rorensu2236">Twitter</a></li>
+                  <li><a href="https://soundcloud.com/rorensu2236">Sound Cloud</a></li>
+                </ul>
+                </div>
             </div>
         </div>
     </div>
-    <footer style="background-color:gray">Footer</footer>
+    <!------------------- ブラック ------------------>
+    <div class="black1 black" id="black1">
+      <span class="termTitle">Information</span>
+      <hr>
+      <div class="nomal">
+        1994年くらいに誕生して<br />
+        
+        <br />
+        中学でアニメを知りオタク化を遂げる<br />
+        <br />
+        高校でCOBOLを学び絶望したのち<br />
+        翌年にBasic言語で感動<br />
+        <br />
+        大学ではゲームのロード時間に<br />
+        Javaをやった様な記憶がある<br />
+        <br />
+        ゲーマー時々プログラマのアニオタ<br />
+        
+        
+      </div>
+    <!------------------- ブラック2 ------------------>
+    </div>
+    <div class="black2 black" id="black2">
+      <span class="termTitle">サバゲー<br /></span>
+      <hr />
+      <div>
+        <br />
+        子供の時にサバゲーしてる<br />おじさんたちを見て<br />
+        <br />
+        やばい人いると思ったら<br />
+        <br />
+        いつの間にか自分もやばい人になってた
+        <br>
+      </div>    
+      
+      
+    <!------------------- ブラック3 ------------------>  
+    </div>
+    <div class="black3 black" id="black3">
+      <span class="termTitle">Animation Club</span>
+      <hr>
+        <div class="nomal">
+          通称あにくら<br />
+          <br />
+          アニメの曲だけが流れるClub<br />
+          <br />
+          青山Everのおたねで<br />
+          アニクラとの衝撃的な出会いを果たし
+          <br />
+          <br />
+          それ以降
+          <br />
+          大抵一番前で暴れてる人<br />
+          <br />
+          基本印象が薄いのでUMR化する
+          <br />
+          <br />
+          
+        </div>
+    </div>
+    
+    <!------------------- フッター　------------------>
+    <footer>
+      <a href="#mosttop" class="btn btn-custom style1"><span class="r r1"></span><span class="r r2"></span>Topへ戻る<span class="r r3"></span><span class="r r4"></span></a>
+    </footer>
     </body>
 </html>
